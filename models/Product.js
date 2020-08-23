@@ -16,7 +16,7 @@ Product.init(
             allowNull: false
         },
         price: {
-            type: DataTypes.DECIMAL,
+            type: DataTypes.DECIMAL, // Price is converting to integer for some reason
             allowNull: false,
             validate: {
                 isDecimal: true

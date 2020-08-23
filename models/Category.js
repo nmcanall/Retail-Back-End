@@ -14,7 +14,8 @@ Category.init(
         },
         category_name: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique: true // I added this because it doesn't make sense to have two categories with the same name
         }
     },
     {
